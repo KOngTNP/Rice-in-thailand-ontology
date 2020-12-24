@@ -1,0 +1,2137 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#"
+     xml:base="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:untitled-ontology-28="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#hasCause -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#hasCause">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#isCauseOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#CauseOfDisease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Pest"/>
+        <rdfs:comment>มีสาเหตุจาก</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#hasCultivated -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#hasCultivated">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#isCultivatedOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Rice"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Region"/>
+        <rdfs:comment>มีที่ปลูก</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#hasDispersal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#hasDispersal">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#isDispersalOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#DispersalOfDisease"/>
+        <rdfs:comment>การแพร่ไป</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#hasEpidemic -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#hasEpidemic">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#isEpidemicOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Region"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Disease"/>
+        <rdfs:comment>การระบาด</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#hasNaturalEnemies -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#hasNaturalEnemies">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#isNaturelEnemiesOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Pest"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#NaturalEnemies"/>
+        <rdfs:comment>ศัตรูตามธรรมชาติ</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#hasNotResist -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#hasNotResist">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Rice"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Pest"/>
+        <rdfs:comment>ไม่ต้านทาน</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#hasPrevented -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#hasPrevented">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#isPreventedOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Disease"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Pest"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Pesticide"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#SolutionOfDisease"/>
+        <rdfs:comment>มีวิธีป้องกัน</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#hasResist -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#hasResist">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Rice"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Pest"/>
+        <rdfs:comment>ต้านทาน</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#hasSymptoms -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#hasSymptoms">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#isSymptomsOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#SymptomsOfDisease"/>
+        <rdfs:comment>มีอาการ</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#isCauseOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#isCauseOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#CauseOfDisease"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Pest"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Disease"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#isCultivatedOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#isCultivatedOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Region"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Rice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#isDispersalOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#isDispersalOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#DispersalOfDisease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Disease"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#isEpidemicOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#isEpidemicOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Region"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#isNaturelEnemiesOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#isNaturelEnemiesOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#NaturalEnemies"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Pest"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#isPreventedOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#isPreventedOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Pesticide"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#SolutionOfDisease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Pest"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#isSymptomsOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#isSymptomsOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#SymptomsOfDisease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Disease"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#hasName">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#hasaAmyloseContent -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#hasaAmyloseContent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#PaddyRice"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#CauseOfDisease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#CauseOfDisease">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Central -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Central">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Region"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Disease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Disease"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#DispersalOfDisease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#DispersalOfDisease">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Eastern -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Eastern">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Region"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#NaturalEnemies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#NaturalEnemies"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Northeastern -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Northeastern">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Region"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Northern -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Northern">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Region"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#PaddyRice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#PaddyRice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Rice"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#StickyRice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Pest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Pest"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Pesticide -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Pesticide"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Region -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Region"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Rice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Rice"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#SolutionOfDisease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#SolutionOfDisease">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Southern -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Southern">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Region"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#StickyRice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#StickyRice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Rice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#SymptomsOfDisease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#SymptomsOfDisease">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Western -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Western">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Region"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Aminoglycosides -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Aminoglycosides">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#SolutionOfDisease"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aminoglycosides</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Amnat_Charoen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Amnat_Charoen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Northeastern"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bacterial_Leaf_Blight"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Blast"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Spot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Dirty_Panicle"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Narrow_Brown_Spot"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amnat Charoen</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Aprostocetus_sp. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Aprostocetus_sp.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#NaturalEnemies"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aprostocetus sp.</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bacterial_Leaf_Blight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bacterial_Leaf_Blight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Disease"/>
+        <hasCause rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Xanthomonas_oryzae_pv"/>
+        <hasDispersal rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Spread_in_the_water"/>
+        <hasPrevented rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Aminoglycosides"/>
+        <hasPrevented rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Isoprothiolane"/>
+        <hasSymptoms rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Yellow_streaks_along_the_leaves"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bacterial Leaf Bilght</hasName>
+        <rdfs:comment>โรคขอบใบแห้ง</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bangkok -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bangkok">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Central"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Spot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Dirty_Panicle"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Grassy_Stunt"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Narrow_Brown_Spot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Ragged_Stunt"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Sheath_Blight"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Sheath_Rot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Yellow_Orange_Leaf"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bangkok</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bipolaris_oryzae -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bipolaris_oryzae">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#CauseOfDisease"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bipolaris oryzae</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Black-brown_spots_on_the_leaf_cladding -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Black-brown_spots_on_the_leaf_cladding">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#SymptomsOfDisease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Blast -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Blast">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Disease"/>
+        <hasCause rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Pyricularia_grisea_Sacc"/>
+        <hasDispersal rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Fungal_spores"/>
+        <hasPrevented rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Carbendazim"/>
+        <hasPrevented rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Kasugamycin"/>
+        <hasPrevented rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Tricyclazole"/>
+        <hasSymptoms rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_spots_like_eyes"/>
+        <hasSymptoms rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Withered_seeds"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blast</hasName>
+        <rdfs:comment>โรคไหม้</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Broad_mite -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Broad_mite">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#DispersalOfDisease"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Broad mite</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Planthopper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Planthopper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Pest"/>
+        <hasNaturalEnemies rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#C._longipennis"/>
+        <hasNaturalEnemies rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Cyrtorhinus_lividipennis"/>
+        <hasNaturalEnemies rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#E._yasumatsui"/>
+        <hasNaturalEnemies rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Lycosa_psuedoannulata"/>
+        <hasNaturalEnemies rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#M._vittaticolis_Stal"/>
+        <hasNaturalEnemies rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#O._yasumatsui"/>
+        <hasPrevented rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Buprofezin"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brown Planthopper</hasName>
+        <rdfs:comment>เพลี้ยกระโดดสีน้ำตาล</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Spot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Spot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Disease"/>
+        <hasCause rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bipolaris_oryzae"/>
+        <hasDispersal rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Fungal_spores"/>
+        <hasPrevented rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Carbendazim"/>
+        <hasPrevented rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Mancozeb"/>
+        <hasSymptoms rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Round_brown_spots"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brown Spot</hasName>
+        <rdfs:comment>โรคใบจุดสีน้ำตาล</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_or_black_spots_on_the_seeds -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_or_black_spots_on_the_seeds">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#SymptomsOfDisease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_spots_like_eyes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_spots_like_eyes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#SymptomsOfDisease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_streaks -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_streaks">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#SymptomsOfDisease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bueng_Kan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bueng_Kan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Northeastern"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bacterial_Leaf_Blight"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Blast"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Spot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Dirty_Panicle"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Narrow_Brown_Spot"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bueng Kan</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Buprofezin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Buprofezin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Pesticide"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Buprofezin</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#C._longipennis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#C._longipennis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#NaturalEnemies"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C. longipennis</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Carbendazim -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Carbendazim">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#SolutionOfDisease"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carbendazim</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Cercospora_oryzae_I._Miyake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Cercospora_oryzae_I._Miyake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#CauseOfDisease"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cercospora oryzae I. Miyake</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chachoengsao -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chachoengsao">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Eastern"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chachoengsao</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chanthaburi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chanthaburi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Eastern"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chanthaburi</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chiang_Mai -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chiang_Mai">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Northern"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bacterial_Leaf_Blight"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Blast"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Spot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Dirty_Panicle"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Narrow_Brown_Spot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Sheath_Blight"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chiang Mai</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chiang_Rai -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chiang_Rai">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Northern"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bacterial_Leaf_Blight"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Blast"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Spot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Dirty_Panicle"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Narrow_Brown_Spot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Sheath_Blight"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chiang Rai</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chlorpyrifos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chlorpyrifos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Pesticide"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chlorpyrifos</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chonburi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chonburi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Eastern"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chonburi</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chumphon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chumphon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Southern"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bacterial_Leaf_Blight"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Blast"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Spot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Dirty_Panicle"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Narrow_Brown_Spot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Sheath_Blight"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chumphon</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Crop_rotation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Crop_rotation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Pesticide"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crop rotation</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Curvularia_lunata -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Curvularia_lunata">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#CauseOfDisease"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Curvularia lunata</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Cyrtorhinus_lividipennis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Cyrtorhinus_lividipennis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#NaturalEnemies"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cyrtorhinus lividipennis</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Dirty_Panicle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Dirty_Panicle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Disease"/>
+        <hasCause rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Cercospora_oryzae_I._Miyake"/>
+        <hasCause rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Curvularia_lunata"/>
+        <hasCause rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Helminthosporium_oryzae_Breda_de_Haan"/>
+        <hasCause rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Sarocladium_oryzae_Sawada"/>
+        <hasCause rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Trichoconis_padwickii_Ganguly"/>
+        <hasCause rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Fusarium_semitectum_Berk_&amp;_Rav"/>
+        <hasDispersal rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Fungal_spores"/>
+        <hasPrevented rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Carbendazim"/>
+        <hasPrevented rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Mancozeb"/>
+        <hasSymptoms rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_or_black_spots_on_the_seeds"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dirty Panicle</hasName>
+        <rdfs:comment>โรคเมล็ดด่าง</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#E._yasumatsui -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#E._yasumatsui">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#NaturalEnemies"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E. yasumatsui</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Eliminate_weeds -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Eliminate_weeds">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Pesticide"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eliminate weeds</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Fungal_spores -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Fungal_spores">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#DispersalOfDisease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Gam_Pai_15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Gam_Pai_15">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#StickyRice"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chiang_Mai"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chiang_Rai"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Lampang"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Lamphun"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Nan"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bacterial_Leaf_Blight"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Planthopper"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Orseolia_oryzae"/>
+        <hasResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Blast"/>
+        <hasResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Yellow_Orange_Leaf"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gam Pai 15</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Gonatocerus_sp. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Gonatocerus_sp.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#NaturalEnemies"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gonatocerus sp.</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Gow_Ruang_88 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Gow_Ruang_88">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#PaddyRice"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bangkok"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Kamphaeng_Phet"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Nonthaburi"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Phra_Nakhon_Si_Ayutthaya"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Sing_Buri"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Blast"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Planthopper"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Orseolia_oryzae"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Yellow_Orange_Leaf"/>
+        <hasResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Green_Rice_Leafhopper"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gow Ruang 88</hasName>
+        <hasaAmyloseContent rdf:datatype="http://www.w3.org/2001/XMLSchema#float">26.0</hasaAmyloseContent>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Grassy_Stunt -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Grassy_Stunt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Disease"/>
+        <hasCause rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Rice_Grassy_Stunt_Virus"/>
+        <hasDispersal rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Planthopper"/>
+        <hasPrevented rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Buprofezin"/>
+        <hasSymptoms rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Narrow_and_yellow_on_the_leaves"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grassy Stunt</hasName>
+        <rdfs:comment>โรคเขียวเตี้ย</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Green-gray_spots -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Green-gray_spots">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#SymptomsOfDisease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Green_Rice_Leafhopper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Green_Rice_Leafhopper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Pest"/>
+        <hasNaturalEnemies rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#C._longipennis"/>
+        <hasNaturalEnemies rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Gonatocerus_sp."/>
+        <hasNaturalEnemies rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#M._vittaticolis_Stal"/>
+        <hasPrevented rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Buprofezin"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Green Rice Leafhopper</hasName>
+        <rdfs:comment>เพลี้ยจักจั่นสีเขียว</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Helminthosporium_oryzae_Breda_de_Haan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Helminthosporium_oryzae_Breda_de_Haan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#CauseOfDisease"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Helminthosporium oryzae Breda de Haan</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Insecticide -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Insecticide">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Pesticide"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Isoprothiolane -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Isoprothiolane">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#SolutionOfDisease"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Isoprothiolane</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Kamphaeng_Phet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Kamphaeng_Phet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Central"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Spot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Dirty_Panicle"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Grassy_Stunt"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Narrow_Brown_Spot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Ragged_Stunt"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Sheath_Blight"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Sheath_Rot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Yellow_Orange_Leaf"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kamphaeng Phet</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Kanchanaburi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Kanchanaburi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Western"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Blast"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Spot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Dirty_Panicle"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Narrow_Brown_Spot"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kanchanaburi</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Kasugamycin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Kasugamycin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#SolutionOfDisease"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kasugamycin</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Lampang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Lampang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Northern"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bacterial_Leaf_Blight"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Blast"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Spot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Dirty_Panicle"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Narrow_Brown_Spot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Sheath_Blight"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lampang</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Lamphun -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Lamphun">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Northern"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bacterial_Leaf_Blight"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Blast"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Spot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Dirty_Panicle"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Narrow_Brown_Spot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Sheath_Blight"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lamphun</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Leuang_Pratew_123 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Leuang_Pratew_123">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#PaddyRice"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bangkok"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Kamphaeng_Phet"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Nonthaburi"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Phra_Nakhon_Si_Ayutthaya"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Sing_Buri"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Blast"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Planthopper"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Grassy_Stunt"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Green_Rice_Leafhopper"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Stem_Borer"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Yellow_Orange_Leaf"/>
+        <hasResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Ragged_Stunt"/>
+        <hasResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Sheath_Blight"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leuang Pratew 123</hasName>
+        <hasaAmyloseContent rdf:datatype="http://www.w3.org/2001/XMLSchema#float">32.0</hasaAmyloseContent>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Lycosa_psuedoannulata -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Lycosa_psuedoannulata">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#NaturalEnemies"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lycosa psuedoannulata</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#M._vittaticolis_Stal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#M._vittaticolis_Stal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#NaturalEnemies"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">M. vittaticolis Stal</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Mancozeb -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Mancozeb">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#SolutionOfDisease"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mancozeb</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Nakhon_Si_Thammarat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Nakhon_Si_Thammarat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Southern"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bacterial_Leaf_Blight"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Blast"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Spot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Dirty_Panicle"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Narrow_Brown_Spot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Sheath_Blight"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nakhon Si Thammarat</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Nan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Nan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Northern"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bacterial_Leaf_Blight"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Blast"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Spot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Dirty_Panicle"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Narrow_Brown_Spot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Sheath_Blight"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nan</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Narrow_Brown_Spot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Narrow_Brown_Spot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Disease"/>
+        <hasCause rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Cercospora_oryzae_I._Miyake"/>
+        <hasDispersal rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Fungal_spores"/>
+        <hasPrevented rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Carbendazim"/>
+        <hasSymptoms rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_streaks"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Narrow Brown Spot</hasName>
+        <rdfs:comment>โรคใบขีดสีน้ำตาล</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Narrow_and_yellow_on_the_leaves -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Narrow_and_yellow_on_the_leaves">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#SymptomsOfDisease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Niaw_Ubon_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Niaw_Ubon_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#StickyRice"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Amnat_Charoen"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bueng_Kan"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Ubon_Ratchathani"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Udon_Thani"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Yasothon"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Blast"/>
+        <hasResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Yellow_Orange_Leaf"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Niaw Ubon 1</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Niaw_Ubon_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Niaw_Ubon_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#StickyRice"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Amnat_Charoen"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bueng_Kan"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Ubon_Ratchathani"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Udon_Thani"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Yasothon"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bacterial_Leaf_Blight"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Planthopper"/>
+        <hasResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Blast"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Niaw Ubon 2</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Nonthaburi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Nonthaburi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Central"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Spot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Dirty_Panicle"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Grassy_Stunt"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Narrow_Brown_Spot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Ragged_Stunt"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Sheath_Blight"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Sheath_Rot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Yellow_Orange_Leaf"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nonthaburi</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#O._yasumatsui -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#O._yasumatsui">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#NaturalEnemies"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O. yasumatsui</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Orseolia_oryzae -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Orseolia_oryzae">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Pest"/>
+        <hasNaturalEnemies rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Aprostocetus_sp."/>
+        <hasNaturalEnemies rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#M._vittaticolis_Stal"/>
+        <hasNaturalEnemies rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#P._oryzae_Cameron"/>
+        <hasPrevented rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Eliminate_weeds"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orseolia oryzae</hasName>
+        <rdfs:comment>แมลงบั่ว</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#P._oryzae_Cameron -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#P._oryzae_Cameron">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#NaturalEnemies"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P. oryzae Cameron</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Pencycuron -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Pencycuron">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#SolutionOfDisease"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pencycuron</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Phang_Nga -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Phang_Nga">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Southern"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bacterial_Leaf_Blight"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Blast"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Spot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Dirty_Panicle"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Narrow_Brown_Spot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Sheath_Blight"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phang Nga</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Phatthalung -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Phatthalung">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Southern"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bacterial_Leaf_Blight"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Blast"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Spot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Dirty_Panicle"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Narrow_Brown_Spot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Sheath_Blight"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phatthalung</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Phetchaburi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Phetchaburi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Western"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Blast"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Spot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Dirty_Panicle"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Narrow_Brown_Spot"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phetchaburi</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Phra_Nakhon_Si_Ayutthaya -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Phra_Nakhon_Si_Ayutthaya">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Central"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Spot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Dirty_Panicle"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Grassy_Stunt"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Narrow_Brown_Spot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Ragged_Stunt"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Sheath_Blight"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Sheath_Rot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Yellow_Orange_Leaf"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phra Nakhon Si Ayutthaya</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Prachinburi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Prachinburi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Eastern"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prachinburi</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Prachuap_Khiri_Khan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Prachuap_Khiri_Khan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Western"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Blast"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Spot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Dirty_Panicle"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Narrow_Brown_Spot"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prachuap Khiri Khan</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Propiconazole -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Propiconazole">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#SolutionOfDisease"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Propiconazole</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Pyricularia_grisea_Sacc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Pyricularia_grisea_Sacc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#CauseOfDisease"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pyricularia grisea Sacc</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#RD10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#RD10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#StickyRice"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Amnat_Charoen"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bueng_Kan"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chiang_Mai"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chiang_Rai"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Lampang"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Lamphun"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Nan"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Ubon_Ratchathani"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Udon_Thani"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Yasothon"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Blast"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Planthopper"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Orseolia_oryzae"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RD10</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#RD13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#RD13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#PaddyRice"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chumphon"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Nakhon_Si_Thammarat"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Phang_Nga"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Phatthalung"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Songkhla"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Sheath_Blight"/>
+        <hasResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Blast"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RD13</hasName>
+        <hasaAmyloseContent rdf:datatype="http://www.w3.org/2001/XMLSchema#float">33.0</hasaAmyloseContent>
+        <rdfs:comment>ศัตรูตามธรรมชาติ</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#RD15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#RD15">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#PaddyRice"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Amnat_Charoen"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bueng_Kan"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Ubon_Ratchathani"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Udon_Thani"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Yasothon"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Blast"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Planthopper"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Orseolia_oryzae"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Sheath_Blight"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Stem_Borer"/>
+        <hasResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Spot"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RD15</hasName>
+        <hasaAmyloseContent rdf:datatype="http://www.w3.org/2001/XMLSchema#float">17.0</hasaAmyloseContent>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#RD2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#RD2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#StickyRice"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Amnat_Charoen"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bangkok"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bueng_Kan"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chachoengsao"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chanthaburi"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chiang_Mai"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chiang_Rai"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chonburi"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chumphon"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Kamphaeng_Phet"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Kanchanaburi"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Lampang"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Lamphun"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Nakhon_Si_Thammarat"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Nan"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Nonthaburi"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Phang_Nga"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Phatthalung"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Phetchaburi"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Phra_Nakhon_Si_Ayutthaya"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Prachinburi"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Prachuap_Khiri_Khan"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Ratchaburi"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Sing_Buri"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Songkhla"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Tak"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Trat"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Ubon_Ratchathani"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Udon_Thani"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Yasothon"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bacterial_Leaf_Blight"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Blast"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Planthopper"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Orseolia_oryzae"/>
+        <hasResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Spot"/>
+        <hasResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Green_Rice_Leafhopper"/>
+        <hasResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Yellow_Orange_Leaf"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RD2</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#RD27 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#RD27">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#PaddyRice"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bangkok"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Kamphaeng_Phet"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Nonthaburi"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Phra_Nakhon_Si_Ayutthaya"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Sing_Buri"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bacterial_Leaf_Blight"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Planthopper"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Yellow_Orange_Leaf"/>
+        <hasResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Blast"/>
+        <hasResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Ragged_Stunt"/>
+        <hasResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Sheath_Blight"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RD27</hasName>
+        <hasaAmyloseContent rdf:datatype="http://www.w3.org/2001/XMLSchema#float">29.0</hasaAmyloseContent>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#RD4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#RD4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#StickyRice"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Amnat_Charoen"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bueng_Kan"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chiang_Mai"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chiang_Rai"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Lampang"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Lamphun"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Nan"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Ubon_Ratchathani"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Udon_Thani"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Yasothon"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bacterial_Leaf_Blight"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Blast"/>
+        <hasResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Planthopper"/>
+        <hasResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Green_Rice_Leafhopper"/>
+        <hasResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Orseolia_oryzae"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RD4</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#RD5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#RD5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#PaddyRice"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Amnat_Charoen"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bangkok"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bueng_Kan"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chachoengsao"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chanthaburi"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chiang_Mai"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chiang_Rai"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chonburi"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chumphon"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Kamphaeng_Phet"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Kanchanaburi"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Lampang"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Lamphun"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Nakhon_Si_Thammarat"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Nan"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Nonthaburi"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Phang_Nga"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Phatthalung"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Phetchaburi"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Phra_Nakhon_Si_Ayutthaya"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Prachinburi"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Ratchaburi"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Sing_Buri"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Songkhla"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Tak"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Trat"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Ubon_Ratchathani"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Udon_Thani"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Yasothon"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Planthopper"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Spot"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Ragged_Stunt"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Stem_Borer"/>
+        <hasResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bacterial_Leaf_Blight"/>
+        <hasResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Blast"/>
+        <hasResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Yellow_Orange_Leaf"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RD5</hasName>
+        <hasaAmyloseContent rdf:datatype="http://www.w3.org/2001/XMLSchema#float">31.0</hasaAmyloseContent>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#RD6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#RD6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#StickyRice"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Amnat_Charoen"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bueng_Kan"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chiang_Mai"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chiang_Rai"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Lampang"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Lamphun"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Nan"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Ubon_Ratchathani"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Udon_Thani"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Yasothon"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bacterial_Leaf_Blight"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Blast"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Planthopper"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Orseolia_oryzae"/>
+        <hasResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Spot"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RD6</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#RD8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#RD8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#StickyRice"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Amnat_Charoen"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bueng_Kan"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Ubon_Ratchathani"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Udon_Thani"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Yasothon"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bacterial_Leaf_Blight"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Planthopper"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Orseolia_oryzae"/>
+        <hasResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Spot"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RD8</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#RD9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#RD9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#PaddyRice"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Amnat_Charoen"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bangkok"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bueng_Kan"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chachoengsao"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chanthaburi"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chiang_Mai"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chiang_Rai"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chonburi"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chumphon"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Kamphaeng_Phet"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Kanchanaburi"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Lampang"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Lamphun"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Nakhon_Si_Thammarat"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Nan"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Nonthaburi"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Phang_Nga"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Phatthalung"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Phetchaburi"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Phra_Nakhon_Si_Ayutthaya"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Prachinburi"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Prachuap_Khiri_Khan"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Ratchaburi"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Sing_Buri"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Songkhla"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Tak"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Trat"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Ubon_Ratchathani"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Udon_Thani"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Yasothon"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bacterial_Leaf_Blight"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Blast"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Dirty_Panicle"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Grassy_Stunt"/>
+        <hasResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Planthopper"/>
+        <hasResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Green_Rice_Leafhopper"/>
+        <hasResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Orseolia_oryzae"/>
+        <hasResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Ragged_Stunt"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RD9</hasName>
+        <hasaAmyloseContent rdf:datatype="http://www.w3.org/2001/XMLSchema#float">31.0</hasaAmyloseContent>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Ragged_Stunt -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Ragged_Stunt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Disease"/>
+        <hasCause rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Rice_Grassy_Stunt_Virus"/>
+        <hasDispersal rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Planthopper"/>
+        <hasPrevented rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Buprofezin"/>
+        <hasSymptoms rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Short_trunk"/>
+        <hasSymptoms rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Twisted_leaves"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ragged Stunt</hasName>
+        <rdfs:comment>โรคใบหงิก</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Ratchaburi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Ratchaburi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Western"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Blast"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Spot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Dirty_Panicle"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Narrow_Brown_Spot"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ratchaburi</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Rhizoctonia_solani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Rhizoctonia_solani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#CauseOfDisease"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rhizoctonia solani</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Rice_Grassy_Stunt_Virus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Rice_Grassy_Stunt_Virus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#CauseOfDisease"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rice Grassy Stunt Virus</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Rice_Tungro_Bacilliform_Virus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Rice_Tungro_Bacilliform_Virus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#CauseOfDisease"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rice Tungro Bacilliform Virus</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Rice_Tungro_Spherical_Virus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Rice_Tungro_Spherical_Virus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#CauseOfDisease"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rice Tungro Spherical Virus</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Round_brown_spots -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Round_brown_spots">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#SymptomsOfDisease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#San-pah-tawng_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#San-pah-tawng_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#StickyRice"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Amnat_Charoen"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bueng_Kan"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chiang_Mai"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chiang_Rai"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Lampang"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Lamphun"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Nan"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Ubon_Ratchathani"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Udon_Thani"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Yasothon"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Orseolia_oryzae"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Yellow_Orange_Leaf"/>
+        <hasResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bacterial_Leaf_Blight"/>
+        <hasResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Blast"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">San Pah Tawng 1</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Sarocladium_oryzae_Sawada -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Sarocladium_oryzae_Sawada">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#CauseOfDisease"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sarocladium oryzae Sawada</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Seed_propagation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Seed_propagation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#DispersalOfDisease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Sheath_Blight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Sheath_Blight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Disease"/>
+        <hasCause rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Rhizoctonia_solani"/>
+        <hasDispersal rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Seed_propagation"/>
+        <hasPrevented rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Pencycuron"/>
+        <hasPrevented rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Propiconazole"/>
+        <hasPrevented rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Validamycin"/>
+        <hasSymptoms rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Green-gray_spots"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sheath Blight</hasName>
+        <rdfs:comment>โรคกาบใบแห้ง</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Sheath_Rot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Sheath_Rot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Disease"/>
+        <hasCause rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Sarocladium_oryzae_Sawada"/>
+        <hasDispersal rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Broad_mite"/>
+        <hasPrevented rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Carbendazim"/>
+        <hasPrevented rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Mancozeb"/>
+        <hasSymptoms rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Black-brown_spots_on_the_leaf_cladding"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sheath Rot</hasName>
+        <rdfs:comment>โรคกาบใบเน่า</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Short_trunk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Short_trunk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#SymptomsOfDisease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Sing_Buri -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Sing_Buri">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Central"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Spot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Dirty_Panicle"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Grassy_Stunt"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Narrow_Brown_Spot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Ragged_Stunt"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Sheath_Blight"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Sheath_Rot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Yellow_Orange_Leaf"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sing Buri</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Songkhla -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Songkhla">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Southern"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bacterial_Leaf_Blight"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Blast"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Spot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Dirty_Panicle"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Narrow_Brown_Spot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Sheath_Blight"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Songkhla</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Spread_in_the_water -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Spread_in_the_water">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#DispersalOfDisease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Stem_Borer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Stem_Borer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Pest"/>
+        <hasNaturalEnemies rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#C._longipennis"/>
+        <hasNaturalEnemies rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Crop_rotation"/>
+        <hasNaturalEnemies rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#M._vittaticolis_Stal"/>
+        <hasNaturalEnemies rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#T._rowani"/>
+        <hasNaturalEnemies rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#T._stangi"/>
+        <hasPrevented rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chlorpyrifos"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stem Borer</hasName>
+        <rdfs:comment>หนอนกอ</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Suphan_Buri_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Suphan_Buri_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#PaddyRice"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bangkok"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chanthaburi"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chonburi"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Kamphaeng_Phet"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Kanchanaburi"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Nonthaburi"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Phetchaburi"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Phra_Nakhon_Si_Ayutthaya"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Prachinburi"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Prachuap_Khiri_Khan"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Ratchaburi"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Sing_Buri"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Tak"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Trat"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Narrow_Brown_Spot"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Sheath_Rot"/>
+        <hasResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bacterial_Leaf_Blight"/>
+        <hasResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Blast"/>
+        <hasResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Planthopper"/>
+        <hasResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Ragged_Stunt"/>
+        <hasResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Yellow_Orange_Leaf"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Suphan buri 2</hasName>
+        <hasaAmyloseContent rdf:datatype="http://www.w3.org/2001/XMLSchema#float">23.0</hasaAmyloseContent>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Surin_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Surin_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#PaddyRice"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Amnat_Charoen"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bueng_Kan"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Ubon_Ratchathani"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Udon_Thani"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Yasothon"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Planthopper"/>
+        <hasResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bacterial_Leaf_Blight"/>
+        <hasResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Blast"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Surin 1</hasName>
+        <hasaAmyloseContent rdf:datatype="http://www.w3.org/2001/XMLSchema#float">30.4</hasaAmyloseContent>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#T._rowani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#T._rowani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#NaturalEnemies"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T. rowani</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#T._stangi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#T._stangi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#NaturalEnemies"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T. stangi</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Tak -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Tak">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Western"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Blast"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Spot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Dirty_Panicle"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Narrow_Brown_Spot"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tak</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Trat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Trat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Eastern"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trat</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Trichoconis_padwickii_Ganguly -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Trichoconis_padwickii_Ganguly">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#CauseOfDisease"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trichoconis padwickii Ganguly</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Tricyclazole -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Tricyclazole">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#SolutionOfDisease"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tricyclazole</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Twisted_leaves -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Twisted_leaves">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#SymptomsOfDisease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Ubon_Ratchathani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Ubon_Ratchathani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Northeastern"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bacterial_Leaf_Blight"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Blast"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Spot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Dirty_Panicle"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Narrow_Brown_Spot"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ubon Ratchathani</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Udon_Thani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Udon_Thani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Northeastern"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bacterial_Leaf_Blight"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Blast"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Spot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Dirty_Panicle"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Narrow_Brown_Spot"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Udon Thani</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Validamycin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Validamycin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#SolutionOfDisease"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Validamycin</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Withered_seeds -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Withered_seeds">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#SymptomsOfDisease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Xanthomonas_oryzae_pv -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Xanthomonas_oryzae_pv">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#CauseOfDisease"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xanthomonas oryzae pv</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Yasothon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Yasothon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Northeastern"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bacterial_Leaf_Blight"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Blast"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Spot"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Dirty_Panicle"/>
+        <hasEpidemic rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Narrow_Brown_Spot"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yasothon</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Yellow_Orange_Leaf -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Yellow_Orange_Leaf">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Disease"/>
+        <hasCause rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Rice_Tungro_Bacilliform_Virus"/>
+        <hasCause rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Rice_Tungro_Spherical_Virus"/>
+        <hasDispersal rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Green_Rice_Leafhopper"/>
+        <hasPrevented rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Buprofezin"/>
+        <hasSymptoms rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Yellow_leaves"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yellow Orange Leaf</hasName>
+        <rdfs:comment>โรคใบสีส้ม</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Yellow_leaves -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Yellow_leaves">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#SymptomsOfDisease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Yellow_streaks_along_the_leaves -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Yellow_streaks_along_the_leaves">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#SymptomsOfDisease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Fusarium_semitectum_Berk_&amp;_Rav -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Fusarium_semitectum_Berk_&amp;_Rav">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#CauseOfDisease"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fusarium semitectum Berk &amp; Rav</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Khao´Jow_Hawm_Phitsanulok_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Khao´Jow_Hawm_Phitsanulok_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#PaddyRice"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chiang_Mai"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Chiang_Rai"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Lampang"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Lamphun"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Nan"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Planthopper"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Green_Rice_Leafhopper"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Yellow_Orange_Leaf"/>
+        <hasResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bacterial_Leaf_Blight"/>
+        <hasResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Blast"/>
+        <hasResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Ragged_Stunt"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khao´ Jow Hawm Phitsanulok 1</hasName>
+        <hasaAmyloseContent rdf:datatype="http://www.w3.org/2001/XMLSchema#float">14.9</hasaAmyloseContent>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Nahng_Cha–lawng -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Nahng_Cha–lawng">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#StickyRice"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bangkok"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Kamphaeng_Phet"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Nonthaburi"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Phra_Nakhon_Si_Ayutthaya"/>
+        <hasCultivated rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Sing_Buri"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Bacterial_Leaf_Blight"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Planthopper"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Orseolia_oryzae"/>
+        <hasNotResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Yellow_Orange_Leaf"/>
+        <hasResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Blast"/>
+        <hasResist rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Brown_Spot"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nahng Cha Lawng</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="urn:swrl:var#x">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#L1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#L2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#NotResist">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#Resist">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Rice"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Region"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#L1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Region"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#L2"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Disease"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#NotResist"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#Disease"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl:var#Resist"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#hasNotResist"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                                                                <swrl:argument2 rdf:resource="urn:swrl:var#NotResist"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#hasResist"/>
+                                                                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                                                                        <swrl:argument2 rdf:resource="urn:swrl:var#Resist"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#hasEpidemic"/>
+                                                                                <swrl:argument1 rdf:resource="urn:swrl:var#L1"/>
+                                                                                <swrl:argument2 rdf:resource="urn:swrl:var#NotResist"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                <rdf:first>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#hasEpidemic"/>
+                                                                                        <swrl:argument1 rdf:resource="urn:swrl:var#L2"/>
+                                                                                        <swrl:argument2 rdf:resource="urn:swrl:var#Resist"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:first>
+                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/kongmac/ontologies/2020/11/untitled-ontology-28#hasCultivated"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#L2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
